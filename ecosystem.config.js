@@ -1,6 +1,6 @@
 export const apps = [
   {
-    name: 'nuxt-app',
+    name: 'devfont.compbook.online',
     script: './start.js',
     env: {
       HOST: 'localhost',
