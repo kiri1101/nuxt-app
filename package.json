@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prod": "nuxt build && nuxt generate && pm2 restart ./ecosystem.config.js"
+    "start": "nuxt start", // Add this line
+    "postinstall": "nuxt prepare" // Optional but recommended
   },
   "dependencies": {
     "nuxt": "^3.16.1",
