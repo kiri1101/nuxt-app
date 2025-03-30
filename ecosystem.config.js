@@ -1,10 +1,13 @@
 export const apps = [
   {
-    name: 'devfont.compbook.online',
-    script: './start.js',
+    name: 'nuxt-app',
+    exec_mode: 'cluster',
+    instances: 'max',
+    script: './node_modules/nuxt/bin/nuxt.js',
+    args: 'start',
     env: {
-      HOST: 'localhost',
-      PORT: 3000
+      NITRO_PORT: 3000,
+      NODE_ENV: 'production'
     }
   }
 ];
